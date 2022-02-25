@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/go-send-message/message"
+	"github.com/go-send-message/scripts/message"
 	"github.com/gorilla/mux"
 )
 
