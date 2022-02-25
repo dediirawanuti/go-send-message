@@ -4,6 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-send-message/scripts/message"
+	"github.com/go-send-message/scripts/utils"
 	"github.com/gorilla/mux"
 )
 
@@ -14,6 +15,7 @@ func newIndexHandler() http.Handler {
 	router.Use(commonMiddleware)
 
 	router.HandleFunc("/api/v1/message", message.SendMessage).Methods("GET")
+	utils.Cron()
 
 	return router
 }
