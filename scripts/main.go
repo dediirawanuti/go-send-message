@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/go-send-message/router"
+	"github.com/go-send-message/scripts/router"
 	"github.com/rs/cors"
 )
 
